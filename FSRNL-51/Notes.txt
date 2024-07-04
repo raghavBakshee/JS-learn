@@ -1,0 +1,46 @@
+Type sof selectors - 
+ -> tag selectors :
+    h1{...}
+ -> universal selector(*)
+    *{..}
+ -> id selector : target element with a unique id (#id)
+
+ -> class selector: target element with a specific class (.classname)
+    .err{
+        ..
+    }
+
+Types of Elements - 
+-> inline - in one line
+label, span, img, input
+-> block level - start with new row
+h1, p, div, semantic tags etc.  
+
+-> margin - outside the border
+margin: top, right, bottom, left
+margin-top:30px
+
+->padding - inside the border
+
+
+-> div tag - It is a divisional tag, it creates a container where we design our layout
+ It includes - Header, Nav, section, Footer 
+
+-< flex or flexbox: used to separate elements in one row
+display: flex
+
+Form tag: collection of fields like textbox, radiobutton, checkbox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
