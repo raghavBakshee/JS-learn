@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(fname, lname){
+                this.fname = fname;
+                this.lname = lname;
+            }
+            fullName(){
+                return `${this.fname} ${this.lname}`;
+            }
+        }
+        class EmployeeOne extends Person{
+            constructor(fname, lname, salary){
+                super(fname, lname);
+                this.salary = salary;
+            }
+            getFullDetails(){
+                return `${super.fullName()} got ${this.salary} per month`;
+            }
+        }
+        const emp1 = new EmployeeOne("Anuj","Joshi", 23000);
+        console.log(emp1.getFullDetails());
+        const emp2 = new EmployeeOne("Sunil","Singh", 62000);
+        console.log(emp2.getFullDetails());
+    </script>
+</body>
+</html>

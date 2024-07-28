@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Callback</h2>
+    <script>
+        const fetchUser  = (uid, callback)=>{
+            console.log("fetch user details");
+            setTimeout(()=>{
+                callback({uid:uid,uname:"Anuj"});
+            }, 2000);
+        }
+        fetchUserServices()
+
+        fetchUser(101, (user)=>{
+            console.log(user);
+            fetchUserServices
+        })
+    </script>
+</body>
+</html>

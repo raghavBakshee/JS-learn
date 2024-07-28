@@ -1,0 +1,20 @@
+Es6 - Ecma Script 6
+
+-> let and const keyword
+-> arrow function (=>) the cord is short and concise
+-> Template literal(concatenation): using backtick
+
+map, filter, reduce
+-> callback - we use callback to handle async operations
+
+Callback  - functions passed as argument to other functions
+
+when we have nested callbackm then problem 
+is known as Callback Hell or Pyramid of DOM.
+
+Promise - 3 states
+1. Pending - when you call a promise first it goes to pending state
+2. Resolve - If completed
+3. Reject - If not completed
+
+Promise return only 1 value at a time either resolve or reject.

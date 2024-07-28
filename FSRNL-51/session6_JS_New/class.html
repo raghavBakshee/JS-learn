@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Class Example</title>
+</head>
+
+<body>
+    <h2> Class Example</h2>
+    <script>
+        class Car {
+            constructor() {
+                this.speed = 50;
+            }
+            checkSpeed() {
+                console.log(`The speed of the car is ${this.speed}`);
+            }
+            accelerate() {
+                this.speed += 30;
+            }
+        }
+        const obj = new Car();
+        obj.checkSpeed();
+        obj.accelerate();
+        obj.checkSpeed();
+        obj.speed = 100;
+        obj.checkSpeed();
+    </script>
+</body>
+
+</html>

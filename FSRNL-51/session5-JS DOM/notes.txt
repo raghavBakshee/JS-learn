@@ -1,0 +1,13 @@
+Objects in js
+
+DOM - Document obbject Model
+It interacts with the webpage to update content dynamically.
+Javascript is used for RunTIme DOM manipulation
+
+-> setInterval : call or execute functions or expressions again and again as per Interval
+let interval = setInterval(function(){
+
+},2000)
+-> clearInterval : stop the current interval
+clearInterval(interval)
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu"></ul>
+
+<button id = "btn">Click Here</button>
+
+<script>
+    let btn = document.getElementById("btn");
+    let menu = document.getElementById("menu")
+    btn.addEventListener("click", function(){
+        let menuItems = ["men", "women","kids"];
+        menuItems.forEach(function(val){
+
+        
+            let li = document.createElement("li");
+            li.textContent = val;
+            menu.appendChild(li);
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Heading
+    </h2>
+    <button onclick="changeColor('red')" onmouseover="changeColor('green')">Change color</button>
+    <script>
+        document.write("Hello this is javascript using document");
+        console.log("Hello this is javascript");
+        let empName = "Employee"
+        console.log("type is " + typeof empName)
+        let x=10
+        let y="10"
+        document.writeln()
+        document.write(x===y)
+        // let num1 = parseInt(prompt("Enter num1"))
+        // let num2 = parseInt(prompt("Enter num2"))
+        // alert("Sum is " +(num1+num2))
+        // let uname = parseInt(prompt("Enter num1"))
+        // let num2 = parseInt(prompt("Enter num2"))
+        // alert("Sum is " +(num1+num2))
+        // for(i = 0; i <= 10; i++){
+        //     document.writeln(i + "<br>")
+        //     console.log(i + "<br>")
+        // }
+
+
+        // let arrayName = [12,10,40,5,2]
+        // var max = 0
+        // arrayName.forEach(function(val){
+        //     if(max < val){
+        //         max = val
+        //     }
+        // })
+        // document.writeln(max);
+        // const add =(a,b) =>(a+b)
+        // document.writeln(add(3,4))
+        // document.bgColor = "green"
+        function changeColor(val){
+            document.bgColor = val
+        }
+    </script>
+</body>
+</html>

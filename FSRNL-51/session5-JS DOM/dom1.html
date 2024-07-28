@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="target">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error blanditiis, quas officia ex praesentium, nam in quo, ratione impedit inventore fuga non eaque? Sint, reiciendis alias neque molestias nemo ut.</p>
+
+<button id = "btn">Click Here</button>
+
+<script>
+    let btn = document.getElementById("btn");
+    let para = document.getElementById("target")
+    btn.addEventListener("click", function(){
+        let data = para.innerHTML;
+        alert(data);
+        para.innerHTML = "Hello, this is UPDATED now!"
+        para.style.color = "red"
+    })
+</script>
+</body>
+</html>

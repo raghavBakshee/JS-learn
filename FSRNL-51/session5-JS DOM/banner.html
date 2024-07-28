@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h2> Stop Watch</h2>
+        <p id="timer"></p>
+        <section>
+            <button id="start"> Start</button>
+            <button id="pause"> Pause</button>
+            <button id="stop"> Stop</button>
+            <script>
+                let count = 0;
+                function counter() {
+                    count++;
+                    document.getElementById("timer").innerHTML = count;
+                }
+                let start = document.getElementById("start");
+                let stop = document.getElementById("stop");
+                let pause = document.getElementById("pause");
+
+                start.addEventListener("click", () => {
+                    intervadocument.getElementById("timer").innerHTML = count;l = setInterval(counter, 200)
+                })
+                
+                stop.addEventListener("click", () => {
+                    clearInterval(interval)
+                    count = 0;
+                })
+
+                pause.addEventListener("click", () => {
+                    clearInterval(interval)
+                })
+            </script>
+        </section>
+    </body>
+</html>

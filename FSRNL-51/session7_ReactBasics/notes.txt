@@ -1,0 +1,3 @@
+ReactJS - Library of ReactJS
+It is knows as View layer of the application
+Virtual DOM - performance is fast, only the delta gets updated in new DOM

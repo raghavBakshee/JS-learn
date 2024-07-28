@@ -1,0 +1,33 @@
+Component - > are the core building block of React app.
+They are used for reusability
+1. Class Component
+2. Function Components - when we create a component, the name start from Capital letter
+
+Class component - 
+syntax:
+import {Component} from 'react';
+clas Component extends Component
+{
+    render(
+        return()
+    }
+} - > No longer used
+Focus on Function Component
+const title="My Home Page";
+
+<h2> {title}</h2>
+
+Props (property) - props are used to pass data from parent to child component
+
+props are readonly, it means we can't change the prop value in the child component
+-> props are passed as an attribure in a component
+
+States - are used to manage data within a component
+We can change the state data as per our requirement.
+When there is any update in a state it automatically re-render in a dom without refreshing whole Page
+
+useState(): this hook is used to manage function Component
+
+import {useState} from 'react';
+const [statename, handlermethod] = useState(initialValue);
+

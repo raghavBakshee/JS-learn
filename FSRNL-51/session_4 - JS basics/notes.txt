@@ -1,0 +1,74 @@
+Javascript - It is a client side sripting language, 
+but after nodejs, it is known as server side
+
+-> Client side -> executed by browser
+-> Server side -> executed by server
+
+Javascript -> used to apply some dynamic contents in our web page
+like animations, event handling, dom manipulation
+
+Internal, external
+
+Internal - 
+<html> 
+<body>
+...
+<script>
+    ..js code
+<script>
+</body>
+</html>
+
+External - 
+<html> 
+<body>
+...
+<script src = "path"> </script>
+</body>
+</html>
+
+1. document.write("---") -> display in browser
+2. console.log() -> display in console (debug a code)
+
+let variable = available within a block only
+const variable = used to define constants. fixed and readonly value.
+
+== -> only check values
+=== -> check both value and datatype
+
+
+alert - display dialog box
+confirm- display confimation box
+prompt - input data at runtime, accepts in string 
+
+string into number - 
+parseInt()
+eval()
+Number()
+
+array = group of elements
+let arrayName = [23,345,3,12,9]..
+arrayName[2]..// 3
+forEach only used for an array
+
+arrayName.forEach(function(val)){
+    console.log(val)
+}
+
+
+function -> for reuse
+
+const functionName = ()=>{
+    ...
+}
+OR 
+const add = (a,b) => (a + b);
+
+Event handling - 
+click, dblclick
+mouseover,mouseout
+keyup,keydown,keypress
+blur,focus,change
+load, reload, submit, scroll
+
+document.bg

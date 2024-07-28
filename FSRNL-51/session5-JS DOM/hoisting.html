@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Hoisting</h2>
+    <script>
+        // x = 10;
+        // console.log(x);
+        // let x;
+        // console.log()
+        // //Pls ignore
+        function countdown(seconds) {
+            if (seconds > 0) {
+                console.log(seconds);
+                setTimeout(() => countdown(seconds - 1), 100);
+            } else {
+                console.log("Time's up!");
+            }
+        }
+
+        countdown(50);
+    </script>
+    
+</body>
+</html>

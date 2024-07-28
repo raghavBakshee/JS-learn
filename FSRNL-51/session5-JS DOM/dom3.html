@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Form Implementation</h2>
+    Name: <input type="text" id="name" /> <br />
+    Age: <input type="text" id="age" /> <br />
+    <button id="btn">Click Here</button>
+
+</body>
+
+
+
+<script>
+    btn = document.getElementById("btn");
+    btn.addEventListener("click", function () {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        if (name != "" && age != "") {
+            alert(name + " is " + age + " year old !");
+        }
+        else {
+            alert("Please fill blank fields")
+        }
+    })
+</script>
+</body>
+</html>
