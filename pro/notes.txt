@@ -1,0 +1,23 @@
+Routing-> process to navigate between components when URL is match
+
+npm i react-router-dom --save
+
+
+React Router inbuild components
+
+-> BrowserRouter : It is a top level component. Entire app is load within  BrowserRouter
+-> Routes: It is a container where we define our all route
+<Routes>
+    <Route path = '' element = {<Home/>}
+    <Route path = 'about' element = {<About/>}
+</Routes>
+<Link to="/"> Home </Link>
+
+-> Outlet: used for child routing or nested routing
+
+-> useNavigate() : to redirect from one route to another
+-> useParams() : for route useParams
+-> useSearchParams(): for query params
+
+Home, About Us, Services, Gallery, Contact Us
+

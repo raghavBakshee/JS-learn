@@ -31,3 +31,55 @@ useState(): this hook is used to manage function Component
 import {useState} from 'react';
 const [statename, handlermethod] = useState(initialValue);
 
+
+Hooks are features that allow us to use functionality in our app (reusability)
+- With the help of Hooks, we can use state and other feature in a function component.
+
+Benefits of react - 
+1. Code is Readable
+2. Lesser Code
+3. Fast Performance
+4. Writing complex components become easier
+
+useEffect - manage state within component
+useState - used for sideeffects
+useRef -  reference to a element and give us mutable object
+useMemo - memorize fucntion 
+useCallback, 
+useContext - context API 
+useReducer-  complex state logic
+
+
+useEffect() - used for sideeffect to call apis, eventhandling etc.
+1. Mounting : When a component is loaded
+2. Updating : When there is any update in state or props
+3. Unmounting : When component is destroyed(cleanup unwanted data)
+
+How we call APIs in React(Http call or Network call)
+1. fetch() method :  inbuilt method of JS which return Promise
+fetch(API)
+.then(res=> res.json())
+.then(data=> console.log(data))
+.catch(err=>console.log(err))
+
+2. axios : It is 3rd party module, it returns Promise
+npm i axios --save
+const API = "path";
+axios.get(API)
+.then(res=>console.log(res.data))
+
+-> Pure Component - where we manage using state
+-> Unpure Component - 
+
+useRef(): It returns a mutable object with the help of it, we can directly access the element instead of using the state
+
+Sometimes, we need to access the element directly, then we uswe useRef()
+-> This object has a current property
+
+
+
+How we create Own Hook - (Custom Hook)
+
+useMemo - It returns a memorized value.
+It lets you the cache result of a calculation
+between re-renders.
