@@ -1,0 +1,45 @@
+Node.js  -> open source, cross platform runtime env which execute js code outside the browser.(server side)
+
+Any node is single thread
+
+Nodejs execution cycle ->
+when a client request comes, it goes to single thread. Nodejs receives these requests and then into the EventQueue.
+Nodejs server has an internal component refers as the Event loop which is an infinite loop that receives request and process them. This event loop is Single threaded.
+Event Queue is listen by EventLoop.
+Due to this async behaviour, the single thread is always free to handle the new request, that's why the reason, the performance of the application is fast.
+
+
+
+In Node, we create we apps, APIs, microservices, network apps etc.
+
+Types of modules -
+1. UserDefined Module
+  To create package.json - use command - "npm init -y"
+
+2. Core Modules (inbuilt module)
+ -> http: Used to create server
+ -> fs - file system, file handling
+ -> events - tp perform custom event handling with the help of Event Emitter
+ -> OS
+-> Path
+  -->  -> http: Used to create server
+   import http from 'http';
+   const PORT = 88999;
+   const server = http.createServer((req,res)=>{
+
+   })
+   server.listen(PORT)
+
+   --> npm i nodemon --g
+
+Event Driven Programming -> 
+It is a programming paradigm where program flow is 
+largely determined by events or user action rather
+than the program logic.
+
+The program listens for events and when they occur,
+it execute some code that should run in response
+of the event.
+emit() and on() are the methods of EventEmitter class
+
+We have event modules in node to handle event-driven program
