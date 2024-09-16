@@ -1,0 +1,50 @@
+Database - Collection of tables in the form of row and column.
+  -> Relational DB - Oracle, Sql, MySql
+  -> NoSQL DB - MongoDB
+
+  MongoDB - Data is stored in documents in key-value pair
+  schema Less, 
+
+  Default port of MongoDB - 27017
+
+In sql we have table, In MongoDB we have Collection
+In sql we have row, In MongoDB we have Document
+In sql we have column, In MongoDB we have Field
+
+
+TO Create collection - 
+db.Emp.insert({name:"Ramesh"})
+
+TO select data - 
+db.CollectionName.find();
+db.CollectionName.find(condition);
+
+
+Aggregate fucntions - 
+limit
+  db.CollectionName.find().limit(5)
+
+skip 
+    db.CollectionName.find().limit(5)
+
+sort
+
+// FInd the second highest salary - 
+db.CollectionName.find().sort({salary : -1}).skip(1).limit(1);
+
+
+Building MongoDB SChema and  models with Mongoose (3rd party node js)
+
+ODM - Object Document Mapper
+Benefits - 
+1. Provides the schema based approach 
+2. We can conenct MongoDB to nodejs
+
+npm i mongoose --save (in our express project)
+
+
+session_16 - Folow the MVC architecture
+Code is separated into 3 major layers
+1. Model - DB related things
+2. View - Presentation layer - React
+3. Controller - Control logic layer of application
